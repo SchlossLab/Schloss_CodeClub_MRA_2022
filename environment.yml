@@ -1,0 +1,13 @@
+name: mra
+channels:
+  - conda-forge
+  - base
+  - bioconda
+  - R
+dependencies:
+  - snakemake=7.18.2
+  - coreutils>=9.1
+  - r-base=4.2.2
+  - r-rmarkdown=2.18
+  - r-tinytex
+  - pandoc
