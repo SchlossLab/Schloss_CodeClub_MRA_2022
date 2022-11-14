@@ -1,8 +1,8 @@
 rule targets:
   input:
     "submission/manuscript.pdf",
-    "submission/manuscript.docx",
-    "submission/manuscript.md"
+    "submission/manuscript.md",
+    "submission/manuscript.tex"
         
 rule write_paper:
   input:
@@ -16,5 +16,6 @@ rule write_paper:
     "submission/manuscript.md"
   shell:
     """
-    R -e "library(rmarkdown); render('{input}')"
+    R -e "library(rmarkdown); render('{input.rmd}', clean = FALSE)"
+    mv submission/manuscript.knit.md submission/manuscript.md
     """
