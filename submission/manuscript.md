@@ -29,7 +29,6 @@ header-includes:
 
 
 
-
 \vspace*{10mm}
 
 # The *Riffomonas* YouTube Channel: An Educational Resource to Foster Reproducible Research Practices
@@ -56,67 +55,26 @@ $1$ Department of Microbiology and Immunology, University of Michigan, Ann Arbor
 \linenumbers
 
 ## Abstract
-Limit the abstract to 50 words or fewer
+
+Methods for analyzing data in a reproducible manner are often viewed as impenetrable to scientists more familiar with laboratory research. The *Riffomonas* YouTube channel is committed to teaching these scientists and others how to engage in reproducible research using modern data science tools.
 
 
 \newpage
 
-Limit the paper to 500 words or fewer
+As high throughput data generation becomes more common in microbiology and other disciplines there is a significant need for laboratory scientists to develop data science skills [@Barone2017]. Unfortunately, traditional undergraduate and graduate biology training programs are often deficient in opportunities for scientists to develop the skills necessary to analyze large datasets in a reproducible and robust manner [@Schloss2018b; @Williams2019]. Numerous organizations seek to fill this void including the Carpentries, Codeacademy, and DataCamp [@Wilson2016]. There are also numerous video tutorials available on YouTube. Although the content available through these platforms are popular, there has been a gap in content that emphasizes project-based learning.
 
-[@Schloss2018a]
-[@Schloss2018b]
+The *Riffomonas* YouTube channel (https://www.youtube.com/c/RiffomonasProject) seeks to fill this gap. I started consistently posting videos at the beginning of the COVID-19 pandemic in the Spring of 2020. As of the end of November 2022, the channel included 285 videos that had been viewed 635,947 times; the channel had 11,327 subscribers. The majority of these are 264 videos in the "Code Club" playlist [@Hagan2020]. Other videos are related to a previously described tutorial series on reproducible research [@Schloss2018a] and series where reproducible reseach practices are used to address topical questions. Code Club videos are typically between 20 and 30 minutes long. The code that is developed in the videos is available through a website (https://riffomonas.org/code_club/) and the channel's GitHub-hosted account (https://github.com/riffomonas).
 
-Code Club
+The name, *Riffomonas*, comes from the concept of "riffing" where musical themes are adapted to achieve a similar sound, albeit perhaps in a different context [@Schloss2018a]. This is to emphasize the value of reproducibility not only to recreate a set of results but to apply a method with a different dataset [@Leek2015]. The channel covers topics related to reproducible data analysis practices including R programming, data visualization, project organization, version control, command line programming, workflow tools, and scientific publishing. Each video includes a brief introduction followed by me live coding to achieve a goal. I emphasize the use of live coding to modulate the rate of instruction and to show viewers my own coding practices. Observing a experienced analyst make mistakes normalizes some level of failure and demonstrates the strategies they can use to resolve their own mistakes. Viewers are encouraged to follow along with each video and to apply the new information to their own project.
 
-https://www.youtube.com/c/RiffomonasProject
-
-Need for all scientists to strengthen their data science skills
-* Focus on reproducible research methods
-* command line, R, Rmarkdown, version control, data visualization, project organization
-
-Previously...
-* Developed Riffomonas reproducible research tutorial series
-* Developed other online tutorials teaching scientists to use in R with microbiome (minimalR) and more general (generalR) data
-
-Current state of the art...
-* Workshop-based tutorials - intensive learning opportunities (minimalR/generalR and Carpentries)
-* Books - use toy datasets, highlight individual commands
-
-The *Riffomonas* YouTube Channel...
-* Repository for Reproducible Research Tutorial series
-* Code Club series
-
-Code Club
-* Born out of pandemic and need for community and desire to fill the hole in offerings for repeated practice, applying concepts in different contexts, and intgration of concepts in project-based approach
-* So far...
-  - Live coded the process of developing, writing, and publishing a paper
-  - Use "real" and not toy datasets - microbiome, weather, commodity prices, COVID-19 vaccine attitudes - to develop concepts
-* Posted 1-3 videos a week
-* Recently started a free weekly email newsletter with practice problems that parallel content in the videos
-
-Availability of code through Jekyll powered blog and repositories within a GitHub-based project
-
-Pedagogy...
-* Offering encouragement
-* Normalize failure
-* Repeated practice opportunities
-* Ability to apply concepts in different contexts
-* Integration of concepts in a project-based approach
-
-
-
+Each video emphasizes a specific topic, but includes other content that is selected to review topics covered in recent videos. Although videos can be watched individually, they often form a project arc. For example, between July 2020 and July 2021, I formulated a research question, obtained and analyzed data to answer the question and wrote a paper that was published in *mSphere* [@Schloss2021]. This series of 67 videos covered every topic from creating the initial directory on my computer to house the project files through reviewing the proofs of the published manuscript. Other project arcs have included visualizing microbiome data, modeling microbiome data using machine learning tools, analyzing the impacts of rarefying microbiome data, and other topics. Going forward, the *Riffomonas* channel will continue to post project-based content to help researchers develop their reproducible research skills.
 
 ## Acknowledgements
 
-
+I am grateful to the audience of the *Riffomonas* channel for their feedback on topics that I should cover in future episodes.
 
 \newpage
 
 ## References
 
 <div id="refs"></div>
-
-\newpage
-
-
-**Figure 1. Lorem ipsum dolor sit amet.** Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

@@ -142,52 +142,76 @@ Ann Arbor, MI 48109
 \hypertarget{abstract}{%
 \subsection{Abstract}\label{abstract}}
 
-Limit the abstract to 50 words or fewer
+Methods for analyzing data in a reproducible manner are often viewed as
+impenetrable to scientists more familiar with laboratory research. The
+\emph{Riffomonas} YouTube channel is committed to teaching these
+scientists and others how to engage in reproducible research using
+modern data science tools.
 
 \newpage
 
-Limit the paper to 500 words or fewer
+As high throughput data generation becomes more common in microbiology
+and other disciplines there is a significant need for laboratory
+scientists to develop data science skills (1). Unfortunately,
+traditional undergraduate and graduate biology training programs are
+often deficient in opportunities for scientists to develop the skills
+necessary to analyze large datasets in a reproducible and robust manner
+(2, 3). Numerous organizations seek to fill this void including the
+Carpentries, Codeacademy, and DataCamp (4). There are also numerous
+video tutorials available on YouTube. Although the content available
+through these platforms are popular, there has been a gap in content
+that emphasizes project-based learning.
 
-(1) (2)
+The \emph{Riffomonas} YouTube channel
+(\url{https://www.youtube.com/c/RiffomonasProject}) seeks to fill this
+gap. I started consistently posting videos at the beginning of the
+COVID-19 pandemic in the Spring of 2020. As of the end of November 2022,
+the channel included 285 videos that had been viewed 635,947 times; the
+channel had 11,327 subscribers. The majority of these are 264 videos in
+the ``Code Club'' playlist (5). Other videos are related to a previously
+described tutorial series on reproducible research (6) and series where
+reproducible reseach practices are used to address topical questions.
+Code Club videos are typically between 20 and 30 minutes long. The code
+that is developed in the videos is available through a website
+(\url{https://riffomonas.org/code_club/}) and the channel's
+GitHub-hosted account (\url{https://github.com/riffomonas}).
 
-Code Club
+The name, \emph{Riffomonas}, comes from the concept of ``riffing'' where
+musical themes are adapted to achieve a similar sound, albeit perhaps in
+a different context (6). This is to emphasize the value of
+reproducibility not only to recreate a set of results but to apply a
+method with a different dataset (7). The channel covers topics related
+to reproducible data analysis practices including R programming, data
+visualization, project organization, version control, command line
+programming, workflow tools, and scientific publishing. Each video
+includes a brief introduction followed by me live coding to achieve a
+goal. I emphasize the use of live coding to modulate the rate of
+instruction and to show viewers my own coding practices. Observing a
+experienced analyst make mistakes normalizes some level of failure and
+demonstrates the strategies they can use to resolve their own mistakes.
+Viewers are encouraged to follow along with each video and to apply the
+new information to their own project.
 
-\url{https://www.youtube.com/c/RiffomonasProject}
-
-Need for all scientists to strengthen their data science skills * Focus
-on reproducible research methods * command line, R, Rmarkdown, version
-control, data visualization, project organization
-
-Previously\ldots{} * Developed Riffomonas reproducible research tutorial
-series * Developed other online tutorials teaching scientists to use in
-R with microbiome (minimalR) and more general (generalR) data
-
-Current state of the art\ldots{} * Workshop-based tutorials - intensive
-learning opportunities (minimalR/generalR and Carpentries) * Books - use
-toy datasets, highlight individual commands
-
-The \emph{Riffomonas} YouTube Channel\ldots{} * Repository for
-Reproducible Research Tutorial series * Code Club series
-
-Code Club * Born out of pandemic and need for community and desire to
-fill the hole in offerings for repeated practice, applying concepts in
-different contexts, and intgration of concepts in project-based approach
-* So far\ldots{} - Live coded the process of developing, writing, and
-publishing a paper - Use ``real'' and not toy datasets - microbiome,
-weather, commodity prices, COVID-19 vaccine attitudes - to develop
-concepts * Posted 1-3 videos a week * Recently started a free weekly
-email newsletter with practice problems that parallel content in the
-videos
-
-Availability of code through Jekyll powered blog and repositories within
-a GitHub-based project
-
-Pedagogy\ldots{} * Offering encouragement * Normalize failure * Repeated
-practice opportunities * Ability to apply concepts in different contexts
-* Integration of concepts in a project-based approach
+Each video emphasizes a specific topic, but includes other content that
+is selected to review topics covered in recent videos. Although videos
+can be watched individually, they often form a project arc. For example,
+between July 2020 and July 2021, I formulated a research question,
+obtained and analyzed data to answer the question and wrote a paper that
+was published in \emph{mSphere} (8). This series of 67 videos covered
+every topic from creating the initial directory on my computer to house
+the project files through reviewing the proofs of the published
+manuscript. Other project arcs have included visualizing microbiome
+data, modeling microbiome data using machine learning tools, analyzing
+the impacts of rarefying microbiome data, and other topics. Going
+forward, the \emph{Riffomonas} channel will continue to post
+project-based content to help researchers develop their reproducible
+research skills.
 
 \hypertarget{acknowledgements}{%
 \subsection{Acknowledgements}\label{acknowledgements}}
+
+I am grateful to the audience of the \emph{Riffomonas} channel for their
+feedback on topics that I should cover in future episodes.
 
 \newpage
 
@@ -196,12 +220,13 @@ practice opportunities * Ability to apply concepts in different contexts
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{0}{1}
-\leavevmode\vadjust pre{\hypertarget{ref-Schloss2018a}{}}%
+\leavevmode\vadjust pre{\hypertarget{ref-Barone2017}{}}%
 \CSLLeftMargin{1. }%
-\CSLRightInline{\textbf{Schloss PD}. 2018. The {R}iffomonas reproducible
-research tutorial series. Journal of Open Source Education
-\textbf{1}:13.
-doi:\href{https://doi.org/10.21105/jose.00013}{10.21105/jose.00013}.}
+\CSLRightInline{\textbf{Barone L}, \textbf{Williams J}, \textbf{Micklos
+D}. 2017. Unmet needs for analyzing biological big data: A survey of 704
+{NSF} principal investigators. {PLOS} Computational Biology
+\textbf{13}:e1005755.
+doi:\href{https://doi.org/10.1371/journal.pcbi.1005755}{10.1371/journal.pcbi.1005755}.}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Schloss2018b}{}}%
 \CSLLeftMargin{2. }%
@@ -210,16 +235,65 @@ threats to reproducibility, replicability, robustness, and
 generalizability in microbiome research. {mBio} \textbf{9}.
 doi:\href{https://doi.org/10.1128/mbio.00525-18}{10.1128/mbio.00525-18}.}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Williams2019}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{\textbf{Williams JJ}, \textbf{Drew JC},
+\textbf{Galindo-Gonzalez S}, \textbf{Robic S}, \textbf{Dinsdale E},
+\textbf{Morgan WR}, \textbf{Triplett EW}, \textbf{Burnette JM},
+\textbf{Donovan SS}, \textbf{Fowlks ER}, \textbf{Goodman AL},
+\textbf{Grandgenett NF}, \textbf{Goller CC}, \textbf{Hauser C},
+\textbf{Jungck JR}, \textbf{Newman JD}, \textbf{Pearson WR},
+\textbf{Ryder EF}, \textbf{Sierk M}, \textbf{Smith TM},
+\textbf{Tosado-Acevedo R}, \textbf{Tapprich W}, \textbf{Tobin TC},
+\textbf{Toro-Martínez A}, \textbf{Welch LR}, \textbf{Wilson MA},
+\textbf{Ebenbach D}, \textbf{McWilliams M}, \textbf{Rosenwald AG},
+\textbf{Pauley MA}. 2019. Barriers to integration of bioinformatics into
+undergraduate life sciences education: A national study of {US} life
+sciences faculty uncover significant barriers to integrating
+bioinformatics into undergraduate instruction. {PLOS} {ONE}
+\textbf{14}:e0224288.
+doi:\href{https://doi.org/10.1371/journal.pone.0224288}{10.1371/journal.pone.0224288}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Wilson2016}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{\textbf{Wilson G}. 2016. Software carpentry: Lessons
+learned. F1000Research.
+doi:\href{https://doi.org/10.12688/f1000research.3-62.v2}{10.12688/f1000research.3-62.v2}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hagan2020}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{\textbf{Hagan AK}, \textbf{Lesniak NA}, \textbf{Balunas
+MJ}, \textbf{Bishop L}, \textbf{Close WL}, \textbf{Doherty MD},
+\textbf{Elmore AG}, \textbf{Flynn KJ}, \textbf{Hannigan GD},
+\textbf{Koumpouras CC}, \textbf{Jenior ML}, \textbf{Kozik AJ},
+\textbf{McBride K}, \textbf{Rifkin SB}, \textbf{Stough JMA},
+\textbf{Sovacool KL}, \textbf{Sze MA}, \textbf{Tomkovich S},
+\textbf{Topcuoglu BD}, \textbf{Schloss PD}. 2020. Ten simple rules to
+increase computational skills among biologists with code clubs. {PLOS}
+Computational Biology \textbf{16}:e1008119.
+doi:\href{https://doi.org/10.1371/journal.pcbi.1008119}{10.1371/journal.pcbi.1008119}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Schloss2018a}{}}%
+\CSLLeftMargin{6. }%
+\CSLRightInline{\textbf{Schloss PD}. 2018. The {R}iffomonas reproducible
+research tutorial series. Journal of Open Source Education
+\textbf{1}:13.
+doi:\href{https://doi.org/10.21105/jose.00013}{10.21105/jose.00013}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Leek2015}{}}%
+\CSLLeftMargin{7. }%
+\CSLRightInline{\textbf{Leek JT}, \textbf{Peng RD}. 2015. Reproducible
+research can still be wrong: Adopting a prevention approach. Proceedings
+of the National Academy of Sciences \textbf{112}:1645--1646.
+doi:\href{https://doi.org/10.1073/pnas.1421412111}{10.1073/pnas.1421412111}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Schloss2021}{}}%
+\CSLLeftMargin{8. }%
+\CSLRightInline{\textbf{Schloss PD}. 2021. Amplicon sequence variants
+artificially split bacterial genomes into separate clusters. {mSphere}
+\textbf{6}.
+doi:\href{https://doi.org/10.1128/msphere.00191-21}{10.1128/msphere.00191-21}.}
+
 \end{CSLReferences}
-
-\newpage
-
-\textbf{Figure 1. Lorem ipsum dolor sit amet.} Consectetur adipisicing
-elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-qui officia deserunt mollit anim id est laborum.
 
 \end{document}
