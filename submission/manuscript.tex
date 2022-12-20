@@ -34,6 +34,16 @@
 \makeatother
 \usepackage{xcolor}
 \usepackage[margin=1.0in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -167,15 +177,15 @@ that emphasizes project-based learning.
 The \emph{Riffomonas} YouTube channel
 (\url{https://www.youtube.com/c/RiffomonasProject}) seeks to fill this
 gap. I started consistently posting videos at the beginning of the
-COVID-19 pandemic in the Spring of 2020. As of the end of November 2022,
-the channel included 285 videos that had been viewed 635,947 times; the
+COVID-19 pandemic in April 2020. As of the end of November 2022, the
+channel included 285 videos that had been viewed 635,947 times; the
 channel had 11,327 subscribers. The majority of these are 264 videos in
-the ``Code Club'' playlist (5). Other videos are related to a previously
-described tutorial series on reproducible research (6) and series where
-reproducible reseach practices are used to address topical questions.
-Code Club videos are typically between 20 and 30 minutes long. The code
-that is developed in the videos is available through a website
-(\url{https://riffomonas.org/code_club/}) and the channel's
+the ``Code Club'' playlist (5) (Table 1). Other videos are related to a
+previously described tutorial series on reproducible research (6) and
+series where reproducible reseach practices are used to address topical
+questions. Code Club videos are typically between 20 and 30 minutes
+long. The code that is developed in the videos is available through a
+website (\url{https://riffomonas.org/code_club/}) and the channel's
 GitHub-hosted account (\url{https://github.com/riffomonas}).
 
 The name, \emph{Riffomonas}, comes from the concept of ``riffing'' where
@@ -185,10 +195,10 @@ reproducibility not only to recreate a set of results but to apply a
 method with a different dataset (7). The channel covers topics related
 to reproducible data analysis practices including R programming, data
 visualization, project organization, version control, command line
-programming, workflow tools, and scientific publishing. Each video
-includes a brief introduction followed by me live coding to achieve a
-goal. I emphasize the use of live coding to modulate the rate of
-instruction and to show viewers my own coding practices. Observing a
+programming, workflow tools, and scientific publishing (Table 1). Each
+video includes a brief introduction followed by me live coding to
+achieve a goal. I emphasize the use of live coding to modulate the rate
+of instruction and to show viewers my own coding practices. Observing a
 experienced analyst make mistakes normalizes some level of failure and
 demonstrates the strategies they can use to resolve their own mistakes.
 Viewers are encouraged to follow along with each video and to apply the
@@ -196,10 +206,10 @@ new information to their own project.
 
 Each video emphasizes a specific topic, but includes other content that
 is selected to review topics covered in recent videos. Although videos
-can be watched individually, they often form a project arc. For example,
-between July 2020 and July 2021, I formulated a research question,
-obtained and analyzed data to answer the question, and wrote a paper
-that was published in \emph{mSphere} (8). This series of 67 videos
+can be watched individually, they often form a project arc (Table 1).
+For example, between July 2020 and July 2021, I formulated a research
+question, obtained and analyzed data to answer the question, and wrote a
+paper that was published in \emph{mSphere} (8). This series of 67 videos
 covered every topic from creating the initial directory on my computer
 to house the project files through reviewing the proofs of the published
 manuscript. Other project arcs have included visualizing microbiome
@@ -297,5 +307,70 @@ artificially split bacterial genomes into separate clusters. {mSphere}
 doi:\href{https://doi.org/10.1128/msphere.00191-21}{10.1128/msphere.00191-21}.}
 
 \end{CSLReferences}
+
+\newpage
+
+\textbf{Table 1. Description of the data science topics and project
+based series covered in the playlists found on the \emph{Riffomonas}
+YouTube Channel.} Because most videos cover more than one topic they are
+found in mutiple playlists. Playlists and counts were current as of
+December 1, 2022. Playlists can be found under the Playlist tab at
+\url{https://www.youtube.com/c/RiffomonasProject}.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6364}}
+  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3636}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\textbf{Number of videos}
+\end{minipage} \\
+\midrule()
+\endhead
+\textbf{Videos covering data science topics} & \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpKHYucwmN6YlNjoyeWoGBYu}{Data
+visualization with R's tidyverse and allied packages} & 146 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpKf7j_ewpUm-w33R6PJYtD9}{Data
+manipulation within R's tidyverse and other packages} & 116 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpLaDgAZb5SHHhJ8TDufVv7H}{Data
+analysis with base R} & 39 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpLdTEOj_-bwp58490i8ezRI}{Tools
+for reproducible data analysis} & 33 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpKhP0Jb2XGPoRRfToHF1w-y}{Working
+at the command line} & 26 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpKT5Wz1IHZneRXPUGNtB-IG}{Literate
+programming with R markdown} & 18 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpKpzb9-vI4V7SdXC-jXEcmg}{Machine
+learning with mikropml R package} & 16 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpJtNdQBPhPWjIFRYeFOGfJ1}{Version
+control with git and GitHub} & 15 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpI7_TMg72ub3Nflk9F8qPlb}{Scientific
+writing} & 15 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpKtCHqSSHXZdK-C4Zg89Rrv}{Project
+organization} & 3 \\
+& \\
+\textbf{Project based series} & \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpKY3SZiivlIGvcLX-KHmfR8}{All
+Code Club videos since April 2, 2020} & 265 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpIIRdQTS2aOs5OD7vVMKWAi}{Microbiome
+data analysis and visualization} & 86 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpL7m_tyWdQgdyurerttCsPY}{ASV/OTU
+senstitivity and specificity analyses} & 67 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpL9STHqSod2LGwciLk9TXZ1}{Visualizing
+COVID-19 vaccination attitudes} & 31 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpJTSHf3IsN_K_pjFu58z9Oq}{Climate
+change data visualization} & 29 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpJuhS93PYC-Xr5oqur7IIWf}{Evaluating
+rarefaction and its alternatives} & 18 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpK6iqwN3QeQyXqI6DrcGgIm}{Drought
+index visualization} & 17 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpL0d2E26TqPkmTAfelYKbQX}{Reproducible
+reserach tutorial series} & 14 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpK24Xzukw7ngIDEeukkunzO}{Commemorating
+Juneteenth 2022 with a visualization} & 5 \\
+\href{https://youtube.com/playlist?list=PLmNrK_nkqBpLd_IvW37Fm1w5LRv9ggvYI}{2018
+MLB All Star Break data analysis sprint} & 4 \\
+\bottomrule()
+\end{longtable}
 
 \end{document}

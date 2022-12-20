@@ -66,11 +66,11 @@ Methods for analyzing data in a reproducible manner are often viewed as impenetr
 
 As high throughput data generation becomes more common in microbiology and other disciplines there is a significant need for laboratory scientists to develop data science skills [@Barone2017]. Unfortunately, traditional undergraduate and graduate biology training programs are often deficient in opportunities for scientists to develop the skills necessary to analyze large datasets in a reproducible and robust manner [@Schloss2018b; @Williams2019]. Numerous organizations seek to fill this void including the Carpentries, Codeacademy, and DataCamp [@Wilson2016]. There are also numerous video tutorials available on YouTube. Although the content available through these platforms are popular, there has been a gap in content that emphasizes project-based learning.
 
-The *Riffomonas* YouTube channel (https://www.youtube.com/c/RiffomonasProject) seeks to fill this gap. I started consistently posting videos at the beginning of the COVID-19 pandemic in the Spring of 2020. As of the end of November 2022, the channel included 285 videos that had been viewed 635,947 times; the channel had 11,327 subscribers. The majority of these are 264 videos in the "Code Club" playlist [@Hagan2020]. Other videos are related to a previously described tutorial series on reproducible research [@Schloss2018a] and series where reproducible reseach practices are used to address topical questions. Code Club videos are typically between 20 and 30 minutes long. The code that is developed in the videos is available through a website (https://riffomonas.org/code_club/) and the channel's GitHub-hosted account (https://github.com/riffomonas).
+The *Riffomonas* YouTube channel (https://www.youtube.com/c/RiffomonasProject) seeks to fill this gap. I started consistently posting videos at the beginning of the COVID-19 pandemic in April 2020. As of the end of November 2022, the channel included 285 videos that had been viewed 635,947 times; the channel had 11,327 subscribers. The majority of these are 264 videos in the "Code Club" playlist [@Hagan2020] (Table 1). Other videos are related to a previously described tutorial series on reproducible research [@Schloss2018a] and series where reproducible reseach practices are used to address topical questions. Code Club videos are typically between 20 and 30 minutes long. The code that is developed in the videos is available through a website (https://riffomonas.org/code_club/) and the channel's GitHub-hosted account (https://github.com/riffomonas).
 
-The name, *Riffomonas*, comes from the concept of "riffing" where musical themes are adapted to achieve a similar sound, albeit perhaps in a different context [@Schloss2018a]. This is to emphasize the value of reproducibility not only to recreate a set of results but to apply a method with a different dataset [@Leek2015]. The channel covers topics related to reproducible data analysis practices including R programming, data visualization, project organization, version control, command line programming, workflow tools, and scientific publishing. Each video includes a brief introduction followed by me live coding to achieve a goal. I emphasize the use of live coding to modulate the rate of instruction and to show viewers my own coding practices. Observing a experienced analyst make mistakes normalizes some level of failure and demonstrates the strategies they can use to resolve their own mistakes. Viewers are encouraged to follow along with each video and to apply the new information to their own project.
+The name, *Riffomonas*, comes from the concept of "riffing" where musical themes are adapted to achieve a similar sound, albeit perhaps in a different context [@Schloss2018a]. This is to emphasize the value of reproducibility not only to recreate a set of results but to apply a method with a different dataset [@Leek2015]. The channel covers topics related to reproducible data analysis practices including R programming, data visualization, project organization, version control, command line programming, workflow tools, and scientific publishing (Table 1). Each video includes a brief introduction followed by me live coding to achieve a goal. I emphasize the use of live coding to modulate the rate of instruction and to show viewers my own coding practices. Observing a experienced analyst make mistakes normalizes some level of failure and demonstrates the strategies they can use to resolve their own mistakes. Viewers are encouraged to follow along with each video and to apply the new information to their own project.
 
-Each video emphasizes a specific topic, but includes other content that is selected to review topics covered in recent videos. Although videos can be watched individually, they often form a project arc. For example, between July 2020 and July 2021, I formulated a research question, obtained and analyzed data to answer the question, and wrote a paper that was published in *mSphere* [@Schloss2021]. This series of 67 videos covered every topic from creating the initial directory on my computer to house the project files through reviewing the proofs of the published manuscript. Other project arcs have included visualizing microbiome data, modeling microbiome data using machine learning tools, analyzing the impacts of rarefying microbiome data, and other topics. Going forward, the *Riffomonas* channel will continue to post project-based content to help researchers develop their reproducible research skills.
+Each video emphasizes a specific topic, but includes other content that is selected to review topics covered in recent videos. Although videos can be watched individually, they often form a project arc (Table 1). For example, between July 2020 and July 2021, I formulated a research question, obtained and analyzed data to answer the question, and wrote a paper that was published in *mSphere* [@Schloss2021]. This series of 67 videos covered every topic from creating the initial directory on my computer to house the project files through reviewing the proofs of the published manuscript. Other project arcs have included visualizing microbiome data, modeling microbiome data using machine learning tools, analyzing the impacts of rarefying microbiome data, and other topics. Going forward, the *Riffomonas* channel will continue to post project-based content to help researchers develop their reproducible research skills.
 
 ## Acknowledgements
 
@@ -81,3 +81,33 @@ I am grateful to the audience of the *Riffomonas* channel for their feedback on 
 ## References
 
 <div id="refs"></div>
+
+\newpage
+
+**Table 1. Description of the data science topics and project based series covered in the playlists found on the *Riffomonas* YouTube Channel.** Because most videos cover more than one topic they are found in mutiple playlists. Playlists and counts were current as of December 1, 2022. Playlists can be found under the Playlist tab at https://www.youtube.com/c/RiffomonasProject.
+
+| |  **Number of videos**  |
+|:-----------------------------------------|:----------------------:|
+| **Videos covering data science topics** |  |
+| [Data visualization with R's tidyverse and allied packages](https://youtube.com/playlist?list=PLmNrK_nkqBpKHYucwmN6YlNjoyeWoGBYu) | 146 |
+| [Data manipulation within R's tidyverse and other packages](https://youtube.com/playlist?list=PLmNrK_nkqBpKf7j_ewpUm-w33R6PJYtD9) | 116 |
+| [Data analysis with base R](https://youtube.com/playlist?list=PLmNrK_nkqBpLaDgAZb5SHHhJ8TDufVv7H) | 39 |
+| [Tools for reproducible data analysis](https://youtube.com/playlist?list=PLmNrK_nkqBpLdTEOj_-bwp58490i8ezRI) | 33 |
+| [Working at the command line](https://youtube.com/playlist?list=PLmNrK_nkqBpKhP0Jb2XGPoRRfToHF1w-y) | 26 |
+| [Literate programming with R markdown](https://youtube.com/playlist?list=PLmNrK_nkqBpKT5Wz1IHZneRXPUGNtB-IG) | 18 |
+| [Machine learning with mikropml R package](https://youtube.com/playlist?list=PLmNrK_nkqBpKpzb9-vI4V7SdXC-jXEcmg) | 16 |
+| [Version control with git and GitHub](https://youtube.com/playlist?list=PLmNrK_nkqBpJtNdQBPhPWjIFRYeFOGfJ1) | 15 |
+| [Scientific writing](https://youtube.com/playlist?list=PLmNrK_nkqBpI7_TMg72ub3Nflk9F8qPlb) | 15 |
+| [Project organization](https://youtube.com/playlist?list=PLmNrK_nkqBpKtCHqSSHXZdK-C4Zg89Rrv) | 3 |
+|    |
+| **Project based series** |  |
+| [All Code Club videos since April 2, 2020](https://youtube.com/playlist?list=PLmNrK_nkqBpKY3SZiivlIGvcLX-KHmfR8) | 265 |
+| [Microbiome data analysis and visualization](https://youtube.com/playlist?list=PLmNrK_nkqBpIIRdQTS2aOs5OD7vVMKWAi) | 86 |
+| [ASV/OTU senstitivity and specificity analyses](https://youtube.com/playlist?list=PLmNrK_nkqBpL7m_tyWdQgdyurerttCsPY) | 67 |
+| [Visualizing COVID-19 vaccination attitudes](https://youtube.com/playlist?list=PLmNrK_nkqBpL9STHqSod2LGwciLk9TXZ1) | 31 |
+| [Climate change data visualization](https://youtube.com/playlist?list=PLmNrK_nkqBpJTSHf3IsN_K_pjFu58z9Oq) | 29 |
+| [Evaluating rarefaction and its alternatives](https://youtube.com/playlist?list=PLmNrK_nkqBpJuhS93PYC-Xr5oqur7IIWf) | 18 |
+| [Drought index visualization](https://youtube.com/playlist?list=PLmNrK_nkqBpK6iqwN3QeQyXqI6DrcGgIm) | 17 |
+| [Reproducible reserach tutorial series](https://youtube.com/playlist?list=PLmNrK_nkqBpL0d2E26TqPkmTAfelYKbQX) | 14 |
+| [Commemorating Juneteenth 2022 with a visualization](https://youtube.com/playlist?list=PLmNrK_nkqBpK24Xzukw7ngIDEeukkunzO) | 5 |
+| [2018 MLB All Star Break data analysis sprint](https://youtube.com/playlist?list=PLmNrK_nkqBpLd_IvW37Fm1w5LRv9ggvYI) | 4 |
