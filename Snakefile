@@ -33,3 +33,13 @@ rule track_changes:
     pdflatex -output-directory=submission submission/track_changes.tex
     rm submission/track_changes.aux submission/track_changes.log submission/track_changes.out submission/track_changes.tex submission/manuscript_old.tex
     """ 
+
+rule response_to_reviewers:
+  input:
+    "submission/response_to_reviewers.md"
+  output:
+    "submission/response_to_reviewers.pdf"
+  shell:
+    """
+    pandoc {input} -o {output}
+    """
